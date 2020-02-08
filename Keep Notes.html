@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keep Notes</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./Keep Notes.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <h1 class="bg-light py-4 text-info"><i class="fas fa-sticky-note"></i> Keep List</h1>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <form class="w-50">
+            <input type="text" class="form-control" id="user" placeholder="id" autocomplete="off" required>
+            <input type="text" class="form-control" id="List" placeholder="List-Name" autocomplete="off" required>
+            <div class="row">
+
+                <div class="col">
+                    <input type="text" class="form-control m-0" id="UserName" placeholder="UserName" autocomplete="off" required>
+                </div>
+
+                <div class="col">
+                    <input type="date" class="form-control m-0" id="date" placeholder="Date" autocomplete="off" required>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-success" id= "btn-create">Create</button>
+        <button type="button" class="btn btn-primary" id= "btn-read">Read</button>
+        <button type="button" class="btn btn-warning" id= "btn-update">Update</button>
+        <button type="button" class="btn btn-danger" id= "btn-delete">Delete All</button>
+    </div>
+
+    <div class="container-fluid">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">List-Name</th>
+                <th scope="col">UserName</th>
+                <th scope="col">Date</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody id = "tb">
+                <tr id = "tr">
+                    
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+<script src="./KeepNotes.js"></script>
+</body>
+
+</html>
